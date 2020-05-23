@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback, useRef } from "react"
 import { Helmet } from "react-helmet"
 
 import { Header, Footer, ServiceContainer, ServiceBody } from "../../Component"
+import { Forms } from '../../Container';
 
 const Services = () => {
 	const [service, setService] = useState(false)
@@ -363,7 +364,7 @@ const Services = () => {
 					<h2>
 						Оставьте заявку <br /> и мы с Вами свяжемся!
 					</h2>
-					<form action=''>
+					{/* <form action=''>
 						<div className='index_input_container'>
 							<input
 								type='text'
@@ -395,7 +396,8 @@ const Services = () => {
 						<div className='error_form_msg'>
 						</div>
 						<button type='submit'>Отправить</button>
-					</form>
+					</form> */}
+					<Forms />
 				</div>
 			</section>
 			{service && (

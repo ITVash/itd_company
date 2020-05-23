@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Helmet } from "react-helmet"
 
 import { Header, Footer } from "../../Component"
+import { Forms } from '../../Container';
 
 import "./style.scss"
 
@@ -160,7 +161,7 @@ const About = () => {
 
 						<div className='index_contacts index_contacts_light'>
 							<h2>Или оставьте заявку и мы свяжемся с Вами!</h2>
-							<form action=''>
+							{/* <form action=''>
 								<div className='index_input_container'>
 									<input
 										type='text'
@@ -193,7 +194,8 @@ const About = () => {
 									JF sdf sdf sdomvsd mosld sdflmdsfm!
 								</div>
 								<button type='submit'>Отправить</button>
-							</form>
+							</form> */}
+							<Forms />
 						</div>
 					</div>
 				</div>

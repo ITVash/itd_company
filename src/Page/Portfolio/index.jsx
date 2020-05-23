@@ -117,7 +117,7 @@ const Portfolio = props => {
 			<section className='portfolio_cases_screen'>
 				<div className='wrapper'>
 					<div className='portfolio_cases_container'>
-						<div style={{ with: "100%" }}>
+						<div style={{ width: "100%" }}>
 							<div className='gradient_title'>
 								<h2>Портфолио</h2>
 							</div>
