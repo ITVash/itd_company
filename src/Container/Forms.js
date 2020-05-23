@@ -1,5 +1,6 @@
 import React from 'react'
 import { withFormik } from 'formik'
+import axios from 'axios'
 import Sender from '../utils/SendForm'
 
 import { Forms } from '../Component'
@@ -30,7 +31,8 @@ export default withFormik({
   },
   handleSubmit: (values, { setSubmitting, resetForm }) => {
     console.log('values', values)
-    Sender(values).catch(err => console.log('err', err))
+    //Sender(values).catch(err => console.log('err', err))
+    axios.post("https://us-central1-donbassoperaserve.cloudfunctions.net/api/sendforms", values)
     resetForm()
     setSubmitting(false)
   },
