@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react"
 import { Helmet } from "react-helmet"
 
 import { Header, Footer } from "../../Component"
+import { Clickbait, Forms } from '../../Container'
 
 import "./style.scss"
 
 const Home = () => {
 	const [check, setCheck] = useState(false)
 	const [mobi, setMobi] = useState(false)
+	const [click, setClick] = useState(false)
 	const slider = () => {
 		const types = document.querySelectorAll(".types_item")
 		types.forEach((items, id) => {
@@ -106,7 +108,7 @@ const Home = () => {
 								Ответьте всего на 5 вопросов
 								<br />и узнайте цену Вашего сайта
 							</div>
-							<button className='main_screen_button'>Узнать цену</button>
+							<button className='main_screen_button' onClick={()=> setClick(true)}>Узнать цену</button>
 						</div>
 						<div className='index_main_screen_img_container'>
 							<img src='/img/index_main_img.png' alt='img' />
@@ -228,41 +230,11 @@ const Home = () => {
 						Оставьте заявку
 						<br />и мы с Вами свяжемся!
 					</h2>
-					<form action=''>
-						<div className='index_input_container'>
-							<input
-								type='text'
-								className='index_contacts_input'
-								placeholder='Имя'
-								required
-							/>
-							<input
-								type='tel'
-								className='index_contacts_input'
-								placeholder='Телефон (WhatsApp/Viber)'
-								required
-							/>
-							<input
-								type='email'
-								className='index_contacts_input'
-								placeholder='Email'
-								required
-							/>
-						</div>
-						<textarea
-							name=''
-							id=''
-							cols='30'
-							rows='10'
-							placeholder='Ваше сообщение'
-							required
-						></textarea>
-						<div className='error_form_msg'></div>
-						<button type='submit'>Отправить</button>
-					</form>
+					<Forms />
 				</div>
 			</section>
 			<Footer />
+			{click && ( <Clickbait setCheck={setClick} check={click} /> )}
 		</>
 	)
 }

@@ -116,7 +116,7 @@ const About = () => {
 						</div>
 					</div>
 					<div className='about_img_container'>
-						<img src='/img/about_1.png' alt='' />
+						<img src='/img/about_1.jpg' alt='' />
 					</div>
 				</section>
 			</div>
@@ -132,8 +132,8 @@ const About = () => {
 			<section className='photos'>
 				<div className='wrapper'>
 					<div className='photos_container'>
-						<img src='/img/photo1.png' alt='our photo 1' />
-						<img src='/img/photo2.png' alt='our photo 1' />
+						<img src='/img/photo1.jpg' alt='our photo 1' />
+						<img src='/img/photo2.jpg' alt='our photo 1' />
 					</div>
 					<button id='how_we_work' onClick={() => setOpenSlide(true)}>
 						Как мы работаем
@@ -205,6 +205,7 @@ const About = () => {
 						src='/img/close_form.png'
 						alt=''
 						id='close_how_form'
+						style={{opacity: "70%"}}
 						onClick={() => setOpenSlide(false)}
 					/>
 					<div className='how_we_work_wrapper'>
@@ -220,13 +221,12 @@ const About = () => {
 								<div className='content_container'>
 									<div
 										className='slider_image'
-										style={{ background: "url(/img/how_work1.png)" }}
+										style={{ background: "url(/how/1.png)" }}
 									></div>
 									<div className='slide_info'>
 										<div className='number'>01</div>
 										<p>
-											Cогласование с заказчиком, обсуждение дополнительных
-											вопросов и нюансов
+										Заполнение чек-листа
 										</p>
 									</div>
 									<div className='number_mobile'>01</div>
@@ -237,11 +237,11 @@ const About = () => {
 								<div className='content_container'>
 									<div
 										className='slider_image'
-										style={{ background: "url(/img/how_work1.png)" }}
+										style={{ background: "url(/how/2.png)" }}
 									></div>
 									<div className='slide_info'>
 										<div className='number'>02</div>
-										<p>Cогласование с заказчиком, обсуждение дополнительных</p>
+										<p>Формирование первичного ТЗ на основании полученной информации</p>
 									</div>
 									<div className='number_mobile'>02</div>
 								</div>
@@ -251,17 +251,210 @@ const About = () => {
 								<div className='content_container'>
 									<div
 										className='slider_image'
-										style={{ background: "url(/img/how_work1.png)" }}
+										style={{ background: "url(/how/3.png)" }}
 									></div>
 									<div className='slide_info'>
 										<div className='number'>03</div>
 										<p>
-											Cогласование с заказчиком, обсуждение вопросов и нюансов
+										Согласование с заказчиком. Обсуждение дополнительных вопросов и нюансов, формирование градации цены или же точной цены и сроков
 										</p>
 									</div>
 									<div className='number_mobile'>03</div>
 								</div>
 							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/4.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>04</div>
+										<p>
+										Заключение договора
+										</p>
+									</div>
+									<div className='number_mobile'>04</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/5.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>05</div>
+										<p>
+										Утверждение заказчиком финального ТЗ
+										</p>
+									</div>
+									<div className='number_mobile'>05</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/6.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>06</div>
+										<p>
+										Разработка макетов дизайна сайта
+										</p>
+									</div>
+									<div className='number_mobile'>06</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/5.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>07</div>
+										<p>
+										Согласование макетов с заказчиком
+										</p>
+									</div>
+									<div className='number_mobile'>07</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/8.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>08</div>
+										<p>
+										Вёрстка готовых, согласованных макетов
+										</p>
+									</div>
+									<div className='number_mobile'>08</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/9.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>09</div>
+										<p>
+										Бэк-энд, программирование и проработка функциональности сайта
+										</p>
+									</div>
+									<div className='number_mobile'>09</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/10.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>10</div>
+										<p>
+										Тестирование проекта, при необходимости, правки в проекте
+										</p>
+									</div>
+									<div className='number_mobile'>10</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/11.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>11</div>
+										<p>
+										Демонстрация проекта заказчику
+										</p>
+									</div>
+									<div className='number_mobile'>11</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/12.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>12</div>
+										<p>
+										Создание документации
+										</p>
+									</div>
+									<div className='number_mobile'>12</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/13.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>13</div>
+										<p>
+										Размещение сайта на хостинге
+										</p>
+									</div>
+									<div className='number_mobile'>13</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/14.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>14</div>
+										<p>
+										Приём работы от заказчика
+										</p>
+									</div>
+									<div className='number_mobile'>14</div>
+								</div>
+							</div>
+
+							<div className='slide'>
+								<div className='content_container'>
+									<div
+										className='slider_image'
+										style={{ background: "url(/how/15.png)" }}
+									></div>
+									<div className='slide_info'>
+										<div className='number'>15</div>
+										<p>
+										Завершение проекта
+										</p>
+									</div>
+									<div className='number_mobile'>15</div>
+								</div>
+							</div>
+
 						</div>
 						<div className='slide_switcher'>
 							<span className='slide_switcher_constraint'></span>

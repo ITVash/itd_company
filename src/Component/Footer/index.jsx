@@ -15,58 +15,58 @@ const Footer = () => {
 						<Link to='/about'>О нас</Link>
 					</li>
 					<li>
-						<Link to='/service'>Услуги</Link>
+						<Link to='/services'>Услуги</Link>
 					</li>
 					<li>
 						<Link to='/portfolio'>Портфолио</Link>
 					</li>
 					<li>
-						<Link to='/contacts'>Контакты</Link>
+						<Link to='/about'>Контакты</Link>
 					</li>
 				</ul>
 			</nav>
 			<section className='wrapper'>
 				<ul>
-					<li>
+					{/* <li>
 						<a href='#'>
 							<img src='/img/soc_be.png' alt='' />
 						</a>
-					</li>
+					</li> */}
 					<li>
-						<a href='#'>
+						<a href='https://www.facebook.com/itdwebcompany/?modal=admin_todo_tour'>
 							<img src='/img/soc_face.png' alt='' />
 						</a>
 					</li>
 					<li>
-						<a href='#'>
+						<a href='https://www.instagram.com/itd_company/'>
 							<img src='/img/soc_inst.png' alt='' />
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a href='#'>
 							<img src='/img/soc_tg.png' alt='' />
 						</a>
-					</li>
+					</li> */}
 					<li>
-						<a href='#'>
+						<a href='https://vk.com/itd.company'>
 							<img src='/img/soc_vk.png' alt='' />
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a href='#'>
 							<img src='/img/soc_pin.png' alt='' />
 						</a>
-					</li>
-					<li>
+					</li> */}
+					{/* <li>
 						<a href='#'>
 							<img src='/img/soc_twit.png' alt='' />
 						</a>
-					</li>
-					<li>
+					</li> */}
+					{/* <li>
 						<a href='#'>
 							<img src='/img/soc_you.png' alt='' />
 						</a>
-					</li>
+					</li> */}
 				</ul>
 			</section>
 		</footer>
