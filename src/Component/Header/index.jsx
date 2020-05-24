@@ -1,12 +1,22 @@
 import React, { useState } from "react"
 import { Link } from 'react-router-dom'
 import classNames from 'classnames'
+//import google from 'https://translate.google.com/translate_a/element.js?cb=TranslateInit';
 
 
 import './style.scss'
 
 const Header = () => {
-  const [open, setOpen] = useState(false)
+	const [open, setOpen] = useState(false)
+	const [lang, setLang] = useState(false)
+	const [call, setCall] = useState(true)
+	const [mail, setMail] = useState(true)
+	/* const googleTranslateConfig = {
+		lang: 'en'
+	}
+	new google.translate.TranslateElement({
+		pageLanguage: googleTranslateConfig.lang,
+}) */
 	return (
 		<>
 			<section id='main_menu'  className={classNames({open: open})}>
@@ -63,9 +73,33 @@ const Header = () => {
 				</ul>
 			</section>
 			<section className='fixed_buttons_right'>
-				<button className='lang_button'></button>
-				<button className='call_button'></button>
-				<button className='mail_button'></button>
+				<div className="lang_button_container">
+					<button className='lang_button' onClick={()=> setLang(!lang)} onBlur={()=> setLang(!lang)}></button>
+					{lang && (
+						<ul class="popup_nav_list popup_nav_list__active">
+							<li class="popup_nav_list__item">Английский</li>
+							<li class="popup_nav_list__item popup_nav_list__item_active">Русский</li>
+						</ul>
+					)}
+				</div>
+				<div class="call_button_container">
+					<button className='call_button' onClick={()=> setCall(!call)} onBlur={()=> setCall(!call)}></button>
+					{call && (
+						<ul class="popup_nav_list popup_nav_list__bottom popup_nav_list__active">
+							<li class="popup_nav_list__item">+380715553322</li>
+							<li class="popup_nav_list__item">+79950060572</li>
+						</ul>
+					)}
+				</div>
+				<div class="mail_button_container">
+					<button className='mail_button' onClick={()=> setMail(!mail)} onBlur={()=> setMail(!mail)}></button>
+					{mail && (
+						<ul class="popup_nav_list popup_nav_list__bottom popup_nav_list__active">
+							<li class="popup_nav_list__item">itdcompany@gmail.com</li>
+							{/* <li class="popup_nav_list__item">mail@mail.mail</li> */}
+						</ul>
+					)}
+				</div>
 			</section>
 			<section className='fixed_buttons_left'>
 				<div id='menu_button' onClick={()=> setOpen(true)}>

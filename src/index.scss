@@ -278,7 +278,7 @@ select {
 	width: 100%;
 }
 
-@media (max-width: 1536px) {
+/* @media (max-width: 1536px) {
 
 }
 
@@ -384,4 +384,583 @@ select {
 	.wrapper {
 		max-width: 300px !important;
 	}
+} */
+@media (max-width: 1536px) {
+  .index_advantages_item {
+    height: 480px !important;
+
+    .index_advantages_item_number {
+      font-size: 155px !important;
+    }
+
+    .index_advantages_icon {
+      margin-top: 10px !important;
+      height: 70px;
+    }
+
+    .index_advantages_icon:nth-child(2n + 1) {
+      margin-bottom: 10px !important;
+    }
+  }
+
+  .index_main_screen_name_container {
+    padding-top: 0px;
+
+    .index_main_screen_text {
+      margin-top: 65px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .wrapper {
+    max-width: 1200px !important;
+  }
+
+  .gradient_title {
+    margin-left: 130px !important;
+  }
+
+  .index_why_we {
+    h2 {
+      margin-left: 130px !important;
+    }
+
+    .index_why_we_description {
+      margin-left: 200px !important;
+    }
+  }
+
+  .index_main_screen_name_container {
+    //padding-top: 50px;
+
+    h1 {
+      font-size: 60px;
+    }
+
+    .index_main_screen_text {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 1000px !important;
+  }
+
+  .index_main_screen {
+    padding-top: 40px !important;
+  }
+
+  .index_main_screen_img_container {
+    img {
+      width: 350px !important;
+    }
+  }
+
+  .index_main_screen_name_container {
+    //padding-top: 45px !important;
+
+    h1 {
+      font-size: 55px;
+    }
+
+    .index_main_screen_text {
+      margin-top: 40px !important;
+    }
+
+    .main_screen_button {
+      margin-top: 30px !important;
+    }
+  }
+
+  .index_advantages {
+    flex-wrap: wrap !important;
+
+    .index_advantages_item {
+      flex-basis: 33% !important;
+      height: 700px !important;
+    }
+  }
+
+  .index_contacts {
+    h2 {
+      margin-left: 130px !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    max-width: 850px !important;
+  }
+
+  .shift_description {
+    margin-top: 45px !important;
+  }
+
+  .index_main_screen_img_container {
+    display: none !important;
+  }
+
+  .index_main_screen_name_container {
+    //padding-top: 0!important;
+  }
+
+  .index_advantages {
+    margin-top: 45px !important;
+  }
+
+  .gradient_title {
+    margin-left: 85px !important;
+
+    h2 {
+      font-size: 80px !important;
+    }
+  }
+
+  .index_advantages .index_advantages_item {
+    height: 615px !important;
+  }
+
+  .index_why_we .index_why_we_description {
+    padding-left: 35px;
+    padding-right: 60px;
+    margin-left: 140px !important;
+  }
+
+  .index_why_we {
+    h2 {
+      margin-left: 80px !important;
+    }
+
+    .index_why_we_description {
+      margin-left: 80px !important;
+    }
+  }
+
+  input {
+    padding-left: 20px !important;
+  }
+
+  form {
+    max-width: 900px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    max-width: 650px !important;
+  }
+
+  .fixed_buttons_right {
+    width: 50px;
+
+    button {
+      width: 30px !important;
+    }
+
+    .lang_button {
+      top: 10px;
+    }
+
+    .mail_button {
+      //bottom: 30px;
+    }
+
+    .call_button {
+      //bottom: 90px;
+    }
+  }
+
+  .fixed_buttons_left {
+    width: 50px;
+
+    #menu_button {
+      height: 80px;
+
+      .side_menu_line {
+        height: 55px;
+      }
+    }
+  }
+
+  .index_main_screen_name_container h1 {
+    font-size: 45px;
+  }
+
+  .index_main_screen_name_container .main_screen_button {
+    font-size: 25px;
+  }
+
+  .gradient_title h2 {
+    font-size: 60px !important;
+  }
+
+  .index_why_we {
+    padding: 30px 0 50px 0;
+
+    h2 {
+      font-size: 70px !important;
+      margin-bottom: 20px;
+    }
+
+    .index_why_we_description {
+      font-size: 18px;
+    }
+  }
+
+  .index_main_screen {
+    padding-top: 20px !important;
+  }
+
+  .index_main_screen_name_container {
+    padding-top: 0 !important;
+  }
+
+  .index_main_screen_logo_container {
+    width: 160px;
+    margin-right: 35px;
+
+    img {
+      width: 130px;
+    }
+  }
+
+  .index_main_screen_name_container .index_main_screen_text {
+    margin-top: 25px !important;
+    font-size: 18px !important ;
+  }
+
+  .index_main_screen_name_container .main_screen_button {
+    font-size: 20px;
+    padding: 20px 40px !important;
+  }
+
+  .index_advantages_screen {
+    padding: 30px 0 !important;
+
+    .index_advantages {
+      margin-top: 25px !important;
+    }
+
+    .index_advantages_item {
+      height: 480px !important;
+    }
+  }
+
+  .index_contacts {
+    padding: 30px 0;
+
+    h2 {
+      margin-left: 80px !important;
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+
+    input {
+      height: 50px;
+      padding-left: 10px;
+      font-size: 18px;
+    }
+
+    textarea {
+      margin-top: 20px;
+      font-size: 18px;
+      padding-left: 10px;
+      height: 120px;
+    }
+
+    .error_form_msg {
+      font-size: 18px !important;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 20px 40px !important;
+      font-size: 20px;
+    }
+  }
+
+  nav {
+    ul {
+      height: 80px !important;
+      a {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  footer {
+    section ul {
+      height: 80px !important;
+
+      img {
+        width: 50px !important;
+      }
+    }
+  }
+
+  .shift_description {
+    margin: 0 20px !important;
+    margin-top: 25px !important;
+
+    font-size: 20px !important;
+  }
+
+  form {
+    max-width: 600px !important;
+  }
+
+  .gradient_title {
+    margin-left: 60px !important;
+
+    h2 {
+      font-size: 60px !important;
+    }
+  }
+
+  .fixed_buttons_right .popup_nav_list {
+    right: 25px;
+    top: 25px;
+  }
+
+  .fixed_buttons_right .popup_nav_list__bottom {
+    top: unset;
+    bottom: -40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    max-width: 390px !important;
+  }
+
+  .fixed_buttons_left {
+    #menu_button {
+      left: 25px;
+      top: 15px;
+      width: 30px;
+      height: 45px;
+      transform: rotate(-90deg);
+
+      .side_menu_line {
+        width: 5px;
+        height: 45px;
+      }
+    }
+  }
+
+  .shift_description {
+    margin-top: 10px !important;
+
+    &::before {
+      width: 3px !important;
+      left: -15px !important;
+    }
+  }
+
+  .index_main_screen_logo_container {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .index_main_screen_content_container {
+    flex-direction: column;
+    align-items: center;
+
+    .index_main_screen_name_container {
+      padding-top: 20px !important;
+      text-align: center;
+
+      h2 {
+        font-size: 23px;
+      }
+    }
+  }
+
+  .gradient_title {
+    //margin-left: 60px !important;
+    margin-left: 60px !important;
+
+    h2 {
+      font-size: 40px !important;
+    }
+  }
+
+  .index_advantages {
+    .index_advantages_item {
+      flex-basis: 50% !important;
+
+      .index_advantages_item_number {
+        font-size: 100px !important;
+      }
+
+      .index_advantages_item_icon {
+        padding-right: 20px !important;
+      }
+
+      .index_advantages_item_title {
+        font-size: 20px !important;
+      }
+
+      img {
+        height: 50px;
+      }
+    }
+
+    .index_advantages_item:nth-child(2n) {
+      .index_advantages_item_icon {
+        padding-left: 20px !important;
+        padding-right: 0 !important;
+      }
+    }
+  }
+
+  .index_why_we {
+    h2 {
+      margin-left: 60px !important;
+      font-size: 40px !important;
+    }
+
+    .index_why_we_description {
+      margin-left: 60px !important;
+      padding-left: 15px;
+      border-width: 3px !important;
+    }
+  }
+
+  .index_contacts {
+    h2 {
+      margin-left: 60px !important;
+      font-size: 26px;
+    }
+
+    .index_input_container {
+      flex-direction: column;
+
+      input {
+        height: 80px;
+        width: 100%;
+        margin-bottom: 25px;
+        font-size: 22px;
+      }
+    }
+
+    button {
+      width: 100% !important;
+      font-size: 24px !important;
+    }
+  }
+
+  nav ul {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 30px 0 !important;
+
+    a {
+      font-size: 26px !important;
+    }
+
+    li {
+      margin-top: 30px !important;
+    }
+
+    li:first-child {
+      margin-top: 0 !important;
+    }
+  }
+
+  footer section ul {
+    flex-wrap: wrap;
+    height: auto !important;
+    padding-bottom: 65px;
+
+    li {
+      text-align: center;
+      flex-basis: 33%;
+      margin-top: 35px;
+    }
+  }
+
+  .fixed_buttons_right .lang_button {
+    //right: 15px;
+    top: -50px;
+  }
+
+  .fixed_buttons_right button {
+    width: 40px !important;
+  }
+
+  .fixed_buttons_right .popup_nav_list {
+    top: -40px;
+  }
+
+  .fixed_buttons_right .popup_nav_list {
+    top: unset;
+  }
+}
+
+@media (max-width: 410px) {
+  .wrapper {
+    max-width: 300px !important;
+  }
+
+  .shift_description {
+    margin: 0 !important;
+    margin-left: 15px !important;
+
+    font-size: 16px !important;
+  }
+
+  .index_main_screen_name_container {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  .gradient_title {
+    margin-left: 30px !important;
+
+    h2 {
+      font-size: 35px !important;
+    }
+  }
+
+  .index_advantages_screen .index_advantages {
+    .index_advantages_item {
+      height: 370px !important;
+    }
+
+    .index_advantages_item_title {
+      font-size: 16px !important;
+    }
+  }
+
+  .index_why_we {
+    h2 {
+      margin-left: 0 !important;
+    }
+
+    .index_why_we_description {
+      margin-left: 20px !important;
+      padding-right: 10px;
+    }
+  }
+
+  .index_contacts {
+    h2 {
+      margin-left: 0 !important;
+    }
+
+    input {
+      font-size: 16px !important;
+    }
+
+    textarea {
+      font-size: 16px !important;
+    }
+  }
 }
