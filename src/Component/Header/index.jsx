@@ -9,8 +9,8 @@ import './style.scss'
 const Header = () => {
 	const [open, setOpen] = useState(false)
 	const [lang, setLang] = useState(false)
-	const [call, setCall] = useState(true)
-	const [mail, setMail] = useState(true)
+	const [call, setCall] = useState(false)
+	const [mail, setMail] = useState(false)
 	/* const googleTranslateConfig = {
 		lang: 'en'
 	}
@@ -24,78 +24,78 @@ const Header = () => {
 				<ul id='main_menu_container'>
 					<li>
 						<Link to="/" className='main_menu_item' onClick={()=> setOpen(false)}>
-							<div className='top'></div>
 							<div className='bottom'>
 								<div className='menu_title'>Главная</div>
 							</div>
+							<div className='top'></div>
 						</Link>
 					</li>
 					<li>
 						<Link to="/about" className='main_menu_item' onClick={()=> setOpen(false)}>
-							<div className='top'></div>
 							<div className='bottom'>
 								<div className='menu_title'>О нас</div>
 							</div>
+							<div className='top'></div>
 						</Link>
 					</li>
 					<li>
 						<Link to="/portfolio" className='main_menu_item' onClick={()=> setOpen(false)}>
-							<div className='top'></div>
 							<div className='bottom'>
 								<div className='menu_title'>Портфолио</div>
 							</div>
+							<div className='top'></div>
 						</Link>
 					</li>
 					<li>
 						<Link to="/services" className='main_menu_item' onClick={()=> setOpen(false)}>
-							<div className='top'></div>
 							<div className='bottom'>
 								<div className='menu_title'>Услуги</div>
 							</div>
+							<div className='top'></div>
 						</Link>
 					</li>
 					<li>
 						<Link to="/type-site" className='main_menu_item' onClick={()=> setOpen(false)}>
-							<div className='top'></div>
 							<div className='bottom'>
 								<div className='menu_title'>Типы сайтов</div>
 							</div>
+							<div className='top'></div>
 						</Link>
 					</li>
 					<li>
 						<Link to="/about" className='main_menu_item' onClick={()=> setOpen(false)}>
-							<div className='top'></div>
 							<div className='bottom'>
 								<div className='menu_title'>Контакты</div>
 							</div>
+							<div className='top'></div>
 						</Link>
 					</li>
 				</ul>
 			</section>
 			<section className='fixed_buttons_right'>
 				<div className="lang_button_container">
-					<button className='lang_button' onClick={()=> setLang(!lang)} onBlur={()=> setLang(!lang)}></button>
-					{lang && (
-						<ul class="popup_nav_list popup_nav_list__active">
-							<li class="popup_nav_list__item">Английский</li>
-							<li class="popup_nav_list__item popup_nav_list__item_active">Русский</li>
+					<button className='lang_button' onClick={()=> setLang(!lang)} onBlur={()=> setLang(false)}></button>
+					{/* {lang && ( */}
+						<ul className={classNames("popup_nav_list", { popup_nav_list__active: lang })} onBlur={()=> setLang(false)}>
+							<li className="popup_nav_list__item" data-google-lang="en">Английский</li>
+							<li className="popup_nav_list__item" data-google-lang="ru">Русский</li>
 						</ul>
-					)}
+					{/* )} */}
 				</div>
-				<div class="call_button_container">
-					<button className='call_button' onClick={()=> setCall(!call)} onBlur={()=> setCall(!call)}></button>
+				<div className="call_button_container">
+					<button className='call_button' onClick={()=> setCall(!call)} onBlur={()=> setCall(false)}></button>
 					{call && (
-						<ul class="popup_nav_list popup_nav_list__bottom popup_nav_list__active">
-							<li class="popup_nav_list__item">+380715553322</li>
-							<li class="popup_nav_list__item">+79950060572</li>
+						<ul className="popup_nav_list popup_nav_list__bottom popup_nav_list__active">
+							{/* <li className="popup_nav_list__item">+380715553322</li> */}
+							<li className="popup_nav_list__item">+79950060572</li>
 						</ul>
 					)}
 				</div>
-				<div class="mail_button_container">
-					<button className='mail_button' onClick={()=> setMail(!mail)} onBlur={()=> setMail(!mail)}></button>
+				<div className="mail_button_container">
+					<button className='mail_button' onClick={()=> setMail(!mail)} onBlur={()=> setMail(false)}></button>
 					{mail && (
-						<ul class="popup_nav_list popup_nav_list__bottom popup_nav_list__active">
-							<li class="popup_nav_list__item">itdcompany@gmail.com</li>
+						<ul className="popup_nav_list popup_nav_list__bottom popup_nav_list__active">
+							<li className="popup_nav_list__item">itdwebcompany@gmail.com</li>
 							{/* <li class="popup_nav_list__item">mail@mail.mail</li> */}
 						</ul>
 					)}

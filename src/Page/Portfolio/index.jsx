@@ -15,7 +15,7 @@ const Portfolio = props => {
       id: "01",
       title: "Picasso Studio",
       desc: "Студия интерьерного дизайна",
-      link: "http://artprokofyev.art/",
+      link: "https://artprokofyev.art/",
       prev: "../../portfolio/prev/picasso_studio.jpg",
       file: "../../portfolio/picasso-min.jpg"
     },
@@ -24,7 +24,7 @@ const Portfolio = props => {
       title: "Rec Hustle",
       desc: "Продакшн студи полного цикла/Узбекистан",
       prev: "../../portfolio/prev/rec_hustle.jpg",
-      link: "http://redhustle.uz/",
+      link: "https://redhustle.uz/",
       file: "../../portfolio/rechustle-min.jpg"
     },
     /* {
@@ -39,7 +39,7 @@ const Portfolio = props => {
       title: "КупиМама",
       desc: "Интернет-магазин детских товаров",
       prev: "../../portfolio/prev/kupimama.jpg",
-      link: "http://xn--80aawhlbr5a.com/",
+      link: "https://xn--80aawhlbr5a.com/",
       file: "../../portfolio/kupimama-min.jpg"
     },
     {
@@ -47,7 +47,7 @@ const Portfolio = props => {
       title: "Мария Семенова",
       desc: "Сайт-визитка услуги визажа/Дубай",
       prev: "../../portfolio/prev/mary.jpg",
-      link: "http://mariyasemenova.eu/",
+      link: "https://mariyasemenova.eu/",
       file: "../../portfolio/mary-min.jpg"
     },
     {
@@ -86,7 +86,7 @@ const Portfolio = props => {
       title: "Rykhlova Accessorise",
       desc: "Одностраничный сайт для производителя аксессуаров",
       prev: "../../portfolio/prev/rykhlova.jpg",
-      link: "http://rykhlova.com/",
+      link: "https://rykhlova.com/",
       file: "../../portfolio/ruklova-min.jpg"
     },
     /* {
@@ -150,13 +150,13 @@ const Portfolio = props => {
             onClick={() => handleClose()}
           />
           {openPortfolio && openPortfolio.map(item => (
-            <div key={item.id}><button id='go_to_site'>
+            <React.Fragment key={item.id}><button id='go_to_site'>
               <a href={item.link}>Website</a>
             </button>
             <div className='portfolio_form_container'>
               <img key={item.title} src={`${item.file}`} alt={item.title} />
               {/* <img src='../../img/portfolio_1.png' alt='' /> */}
-            </div></div>
+            </div></React.Fragment>
           ))}
           <Footer />
         </section>
