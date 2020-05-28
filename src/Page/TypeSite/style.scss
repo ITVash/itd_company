@@ -29,12 +29,24 @@
 				font-style: normal;
 				font-size: 20px;
 				line-height: 24px;
+				font font {
+					font-family: "Gilroy-Medium", sans-serif;
+					font-style: normal;
+					font-size: 20px;
+					line-height: 24px;
+				}
 
 				p {
 					font-family: "Gilroy-Medium", sans-serif;
 					font-style: normal;
 					font-size: 20px;
 					line-height: 24px;
+					font font {
+						font-family: "Gilroy-Medium", sans-serif;
+						font-style: normal;
+						font-size: 20px;
+						line-height: 24px;
+					}
 				}
 			}
 		}
@@ -51,7 +63,10 @@
 			background: linear-gradient(90deg, #54bbf6 0%, #390065 100%);
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
-
+			font font {
+				font-family: "Gilroy-ExtraBoldBold", sans-serif;
+				font-weight: 600;
+			}
 			.types_item_header p {
 				transition: border 0.25s;
 				font-weight: 600;
@@ -60,6 +75,10 @@
 				background: linear-gradient(90deg, #54bbf6 0%, #390065 100%);
 				background-clip: text;
 				-webkit-text-fill-color: transparent;
+				font font {
+					font-weight: 600;
+					font-family: "Gilroy-ExtraBoldBold", sans-serif;
+				}
 			}
 		}
 	}
@@ -75,8 +94,15 @@
 		font-size: 22px;
 		line-height: 27px;
 		color: #fff;
-
 		cursor: pointer;
+		font font {
+			font-family: "Gilroy-Bold", sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 27px;
+			color: #fff;
+		}
 	}
 
 	#type_description_container {
@@ -103,7 +129,13 @@
 			padding-left: 15px;
 
 			position: relative;
-
+			font font {
+				font-family: "Gilroy-Regular", sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 26px;
+			}
 			&:before {
 				display: block;
 				position: absolute;
@@ -120,6 +152,10 @@
 			p {
 				font-size: 22px;
 				line-height: 27px;
+				font font {
+					font-size: 22px;
+					line-height: 27px;
+				}
 			}
 
 			/*.type_is {
@@ -129,6 +165,11 @@
 				font-family: "Gilroy-Bold", sans-serif;
 				font-weight: 600;
 				font-size: 22px;
+				font font {
+					font-family: "Gilroy-Bold", sans-serif;
+					font-weight: 600;
+					font-size: 22px;
+				}
 			}
 
 			h3 {
@@ -137,11 +178,19 @@
 				font-size: 22px;
 				margin-top: 30px;
 				margin-bottom: 10px;
+				font font {
+					font-family: "Gilroy-Bold", sans-serif;
+					font-weight: 600;
+					font-size: 22px;
+				}
 			}
 
 			ul li {
 				font-size: 22px;
 				margin: 10px 0;
+				font font {
+					font-size: 22px;
+				}
 			}
 		}
 
@@ -189,10 +238,21 @@
 			padding-top: 30px;
 
 			position: relative;
+			font font {
+				font-family: "Gilroy-Regular", sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 26px;
+			}
 
 			p {
 				font-size: 16px;
 				line-height: 19px;
+				font font {
+					font-size: 16px;
+					line-height: 19px;
+				}
 			}
 
 			/*.type_is {
@@ -203,6 +263,12 @@
 				font-weight: 600;
 				font-size: 16px;
 				line-height: 19px;
+				font font {
+					font-family: "Gilroy-Bold", sans-serif;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 19px;
+				}
 			}
 
 			h3 {
@@ -212,12 +278,22 @@
 				line-height: 19px;
 				margin-top: 30px;
 				margin-bottom: 10px;
+				font font {
+					font-family: "Gilroy-Bold", sans-serif;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 19px;
+				}
 			}
 
 			ul li {
 				font-size: 16px;
 				line-height: 19px;
 				margin: 10px 0;
+				font font {
+					font-size: 16px;
+					line-height: 19px;
+				}
 			}
 		}
 
@@ -309,6 +385,14 @@
 		line-height: 196px;
 
 		color: rgba(255, 255, 255, 0.2);
+		font font {
+			font-family: "Gilroy-ExtraBold", sans-serif;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 160px;
+			line-height: 196px;
+			color: rgba(255, 255, 255, 0.2);
+		}
 	}
 
 	.slider_wrapper {
@@ -331,6 +415,14 @@
 		text-transform: uppercase;
 
 		color: #ffffff;
+		font font {
+			font-family: "Gilroy-ExtraBold", sans-serif;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 50px;
+			line-height: 62px;
+			color: #fff;
+		}
 	}
 
 	#slider_body {
@@ -376,6 +468,14 @@
 					line-height: 22px;
 
 					color: #fdfdfd;
+					font font {
+						font-family: "Gilroy-ExtraBold", sans-serif;
+						font-style: normal;
+						font-weight: 800;
+						font-size: 18px;
+						line-height: 22px;
+						color: #fdfdfd;
+					}
 				}
 
 				.answers {
@@ -410,6 +510,11 @@
 			border-image-slice: 1;
 
 			background: transparent;
+			font font {
+				font-size: 22px;
+				color: white;
+				font-family: "Gilroy-ExtraBold", sans-serif;
+			}
 		}
 
 		.textarea {
@@ -428,6 +533,11 @@
 			border-image-slice: 1;
 
 			background: transparent;
+			font font {
+				font-size: 22px;
+				color: white;
+				font-family: "Gilroy-ExtraBold", sans-serif;
+			}
 		}
 
 		button {
@@ -443,6 +553,11 @@
 			background-size: 150% 100%;
 			background-position: 0% 0;
 			transition: background 0.25s;
+			font font {
+				font-size: 36px;
+				color: white;
+				font-family: "Gilroy-ExtraBold", sans-serif;
+			}
 
 			&:hover {
 				background-position: 100% 0;
@@ -455,6 +570,12 @@
 			text-align: left;
 			font-family: "Gilroy-ExtraBold", sans-serif;
 			color: #9f0000;
+			font font {
+				font-size: 22px;
+				text-align: left;
+				font-family: "Gilroy-ExtraBold", sans-serif;
+				color: #9f0000;
+			}
 		}
 
 		.error_input {
@@ -506,10 +627,18 @@ input[type="checkbox"].check_button ~ label {
 	color: white;
 	text-align: center;
 	line-height: 32px;
+	font font {
+		color: white;
+		text-align: center;
+		line-height: 32px;
+	}
 }
 // Selected checkbox view
 input[type="checkbox"].check_button:checked ~ label {
 	color: white;
+	font font {
+		color: white;
+	}
 }
 
 input[type="checkbox"].general + label {
@@ -522,6 +651,14 @@ input[type="checkbox"].general + label {
 	align-items: center;
 
 	color: #fdfdfd;
+	font font {
+		font-family: "Gilroy-Medium", sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		color: #fdfdfd;
+	}
 }
 
 //Radio
@@ -567,10 +704,18 @@ input[type="radio"].check_button ~ label {
 	color: white;
 	text-align: center;
 	line-height: 32px;
+	font font {
+		color: white;
+		text-align: center;
+		line-height: 32px;
+	}
 }
 // Selected checkbox view
 input[type="radio"].check_button:checked ~ label {
 	color: white;
+	font font {
+		color: white;
+	}
 }
 
 input[type="radio"].general + label {
@@ -583,6 +728,14 @@ input[type="radio"].general + label {
 	align-items: center;
 
 	color: #fdfdfd;
+	font font {
+		font-family: "Gilroy-Medium", sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		color: #fdfdfd;
+	}
 }
 
 .my_answer {
@@ -596,6 +749,15 @@ input[type="radio"].general + label {
 		color: #fdfdfd;
 
 		margin-bottom: 20px;
+		font font {
+			font-family: "Gilroy-Medium", sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 21px;
+
+			color: #fdfdfd;
+		}
 	}
 
 	textarea {
@@ -617,6 +779,15 @@ input[type="radio"].general + label {
 		border-image-slice: 1;
 
 		resize: unset;
+		font font {
+			font-family: "Gilroy-Medium", sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 21px;
+
+			color: #fdfdfd;
+		}
 	}
 }
 
@@ -631,12 +802,20 @@ input[type="radio"].general + label {
 		line-height: 50px;
 		//padding: 0 60px;
 		padding: 0;
+		font font {
+			font-size: 45px;
+			line-height: 50px;
+		}
 	}
 
 	.clickbait_container #number_of_slide {
 		font-size: 140px;
 		line-height: 155px;
 		bottom: 0;
+		font font {
+			font-size: 140px;
+			line-height: 155px;
+		}
 	}
 
 	.clickbait_container #slider_body {
@@ -660,6 +839,9 @@ input[type="radio"].general + label {
 
 	input[type="checkbox"].general + label {
 		font-size: 16px;
+		font font {
+			font-size: 16px;
+		}
 	}
 
 	input[type="checkbox"].general + label span {
@@ -671,6 +853,9 @@ input[type="radio"].general + label {
 
 	input[type="radio"].general + label {
 		font-size: 16px;
+		font font {
+			font-size: 16px;
+		}
 	}
 
 	input[type="radio"].general + label span {
@@ -716,6 +901,10 @@ input[type="radio"].general + label {
 		font-size: 32px;
 		line-height: 40px;
 		padding: 0 45px;
+		font font {
+			font-size: 32px;
+			line-height: 40px;
+		}
 	}
 
 	.clickbait_container #next_slide {
@@ -739,6 +928,10 @@ input[type="radio"].general + label {
 		font-size: 100px;
 		line-height: 120px;
 		bottom: 0;
+		font font {
+			font-size: 100px;
+			line-height: 120px;
+		}
 	}
 
 	.my_answer .textarea {
@@ -746,28 +939,43 @@ input[type="radio"].general + label {
 		height: 40px;
 		font-size: 16px;
 		border-width: 2px;
+		font font {
+			font-size: 16px;
+		}
 	}
 	.clickbait_container #slider_body .textarea {
 		padding: 5px 10px;
 		font-size: 16px;
 		border-width: 2px;
+		font font {
+			font-size: 16px;
+		}
 	}
 
 	.clickbait_container #slider_body input {
 		height: 40px;
 		font-size: 16px;
 		border-width: 2px;
+		font font {
+			font-size: 16px;
+		}
 	}
 
 	.clickbait_container #slider_body .error_form_msg {
 		font-size: 16px;
 		border-width: 2px;
 		margin-top: 0;
+		font font {
+			font-size: 16px;
+		}
 	}
 
 	.clickbait_container #slider_body button {
 		font-size: 24px;
 		padding: 15px 50px;
+		font font {
+			font-size: 24px;
+		}
 	}
 
 	.clickbait_container #slider_body {
@@ -795,6 +1003,10 @@ input[type="radio"].general + label {
 		line-height: 27px;
 		padding: 0 40px;
 		//padding: 0;
+		font font {
+			font-size: 24px;
+			line-height: 27px;
+		}
 	}
 
 	.clickbait_container #slider_body .clickbait_slide .question_container {
@@ -812,6 +1024,10 @@ input[type="radio"].general + label {
 		font-size: 24px;
 		line-height: 27px;
 		padding: 0 40px;
+		font font {
+			font-size: 24px;
+			line-height: 27px;
+		}
 	}
 
 	.clickbait_container .slider_wrapper {
@@ -840,6 +1056,9 @@ input[type="radio"].general + label {
 @media (max-width: 700px) {
 	.clickbait_container #slider_body .clickbait_slide .question_container h4 {
 		font-size: 16px;
+		font font {
+			font-size: 16px;
+		}
 	}
 
 	.clickbait_container #slider_body .index_input_container {
@@ -853,6 +1072,9 @@ input[type="radio"].general + label {
 		margin: 0 auto;
 		margin-bottom: 25px;
 		font-size: 18px;
+		font font {
+			font-size: 18px;
+		}
 	}
 
 	.clickbait_container #slider_body .textarea {
@@ -861,6 +1083,9 @@ input[type="radio"].general + label {
 		margin: 0 auto;
 		margin-bottom: 15px;
 		font-size: 18px;
+		font font {
+			font-size: 18px;
+		}
 	}
 
 	.clickbait_container #slider_body form {
@@ -872,6 +1097,10 @@ input[type="radio"].general + label {
 	.clickbait_container h3 {
 		font-size: 20px;
 		line-height: 25px;
+		font font {
+			font-size: 20px;
+			line-height: 25px;
+		}
 	}
 
 	input[type="checkbox"].general + label span {
@@ -897,6 +1126,10 @@ input[type="radio"].general + label {
 	.clickbait_container #number_of_slide {
 		font-size: 96px;
 		line-height: 100px;
+		font font {
+			font-size: 96px;
+			line-height: 100px;
+		}
 	}
 
 	.clickbait_container .slider_wrapper {
@@ -931,6 +1164,9 @@ input[type="radio"].general + label {
 		padding: 5px 0;
 		height: 40px;
 		font-size: 16px;
+		font font {
+			font-size: 16px;
+		}
 	}
 
 	.clickbait_container #slider_body form {

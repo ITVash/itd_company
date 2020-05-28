@@ -270,12 +270,27 @@ select {
 }
 
 .light_text {
-	color: #fff;
+  color: #fff;
+  font font {
+    color: #fff;
+  }
 }
 
 .App {
 	min-height: 100vh;
 	width: 100%;
+}
+.skiptranslate {
+  display: none !important;
+}
+.page {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  &.page_fix {
+    top: 0 !important;
+    position: static !important;
+  }
 }
 
 /* @media (max-width: 1536px) {
@@ -391,6 +406,9 @@ select {
 
     .index_advantages_item_number {
       font-size: 155px !important;
+      font font {
+        font-size: 155px !important;
+      }
     }
 
     .index_advantages_icon {
@@ -416,6 +434,9 @@ select {
   .wrapper {
     max-width: 1200px !important;
   }
+  /* .wrapper {
+    max-width: 1366px !important;
+  } */
 
   .gradient_title {
     margin-left: 130px !important;
@@ -436,6 +457,9 @@ select {
 
     h1 {
       font-size: 60px;
+      font font {
+        font-size: 60px;
+      }
     }
 
     .index_main_screen_text {
@@ -448,6 +472,9 @@ select {
   .wrapper {
     max-width: 1000px !important;
   }
+  /* .wrapper {
+    max-width: 1200px !important;
+  } */
 
   .index_main_screen {
     padding-top: 40px !important;
@@ -464,6 +491,9 @@ select {
 
     h1 {
       font-size: 55px;
+      font font {
+        font-size: 55px;
+      }
     }
 
     .index_main_screen_text {
@@ -495,6 +525,9 @@ select {
   .wrapper {
     max-width: 850px !important;
   }
+  /* .wrapper {
+    max-width: 1024px !important;
+  } */
 
   .shift_description {
     margin-top: 45px !important;
@@ -504,9 +537,9 @@ select {
     display: none !important;
   }
 
-  .index_main_screen_name_container {
+  /* .index_main_screen_name_container {
     //padding-top: 0!important;
-  }
+  } */
 
   .index_advantages {
     margin-top: 45px !important;
@@ -517,6 +550,9 @@ select {
 
     h2 {
       font-size: 80px !important;
+      font font {
+        font-size: 80px !important;
+      }
     }
   }
 
@@ -553,6 +589,9 @@ select {
   .wrapper {
     max-width: 650px !important;
   }
+  /* .wrapper {
+    max-width: 800px !important;
+  } */
 
   .fixed_buttons_right {
     width: 50px;
@@ -565,13 +604,13 @@ select {
       top: 10px;
     }
 
-    .mail_button {
+    /* .mail_button {
       //bottom: 30px;
     }
 
     .call_button {
       //bottom: 90px;
-    }
+    } */
   }
 
   .fixed_buttons_left {
@@ -588,14 +627,23 @@ select {
 
   .index_main_screen_name_container h1 {
     font-size: 45px;
+    font font {
+      font-size: 45px;
+    }
   }
 
   .index_main_screen_name_container .main_screen_button {
     font-size: 25px;
+    font font {
+      font-size: 25px;
+    }
   }
 
   .gradient_title h2 {
     font-size: 60px !important;
+    font font {
+      font-size: 60px !important;
+    }
   }
 
   .index_why_we {
@@ -604,10 +652,16 @@ select {
     h2 {
       font-size: 70px !important;
       margin-bottom: 20px;
+      font font {
+        font-size: 70px !important;
+      }
     }
 
     .index_why_we_description {
       font-size: 18px;
+      font font {
+        font-size: 18px;
+      }
     }
   }
 
@@ -631,11 +685,17 @@ select {
   .index_main_screen_name_container .index_main_screen_text {
     margin-top: 25px !important;
     font-size: 18px !important ;
+    font font {
+      font-size: 18px !important ;
+    }
   }
 
   .index_main_screen_name_container .main_screen_button {
     font-size: 20px;
     padding: 20px 40px !important;
+    font font {
+      font-size: 20px;
+    }
   }
 
   .index_advantages_screen {
@@ -657,12 +717,18 @@ select {
       margin-left: 80px !important;
       font-size: 45px;
       margin-bottom: 30px;
+      font font {
+        font-size: 45px;
+      }
     }
 
     input {
       height: 50px;
       padding-left: 10px;
       font-size: 18px;
+      font font {
+        font-size: 18px;
+      }
     }
 
     textarea {
@@ -670,16 +736,25 @@ select {
       font-size: 18px;
       padding-left: 10px;
       height: 120px;
+      font font {
+        font-size: 18px;
+      }
     }
 
     .error_form_msg {
       font-size: 18px !important;
+      font font {
+        font-size: 18px !important;
+      }
     }
 
     button {
       margin-top: 20px;
       padding: 20px 40px !important;
       font-size: 20px;
+      font font {
+        font-size: 20px;
+      }
     }
   }
 
@@ -688,6 +763,9 @@ select {
       height: 80px !important;
       a {
         font-size: 20px !important;
+        font font {
+          font-size: 20px !important;
+        }
       }
     }
   }
@@ -707,6 +785,9 @@ select {
     margin-top: 25px !important;
 
     font-size: 20px !important;
+    font font {
+      font-size: 20px !important;
+    }
   }
 
   form {
@@ -718,6 +799,9 @@ select {
 
     h2 {
       font-size: 60px !important;
+      font font {
+        font-size: 60px !important;
+      }
     }
   }
 
@@ -736,6 +820,9 @@ select {
   .wrapper {
     max-width: 390px !important;
   }
+  /* .wrapper {
+    max-width: 550px !important;
+  } */
 
   .fixed_buttons_left {
     #menu_button {
@@ -776,6 +863,9 @@ select {
 
       h2 {
         font-size: 23px;
+        font font {
+          font-size: 23px;
+        }
       }
     }
   }
@@ -786,6 +876,9 @@ select {
 
     h2 {
       font-size: 40px !important;
+      font font {
+        font-size: 40px !important;
+      }
     }
   }
 
@@ -795,6 +888,9 @@ select {
 
       .index_advantages_item_number {
         font-size: 100px !important;
+        font font {
+          font-size: 100px !important;
+        }
       }
 
       .index_advantages_item_icon {
@@ -803,6 +899,9 @@ select {
 
       .index_advantages_item_title {
         font-size: 20px !important;
+        font font {
+          font-size: 20px !important;
+        }
       }
 
       img {
@@ -822,6 +921,9 @@ select {
     h2 {
       margin-left: 60px !important;
       font-size: 40px !important;
+      font font {
+        font-size: 40px !important;
+      }
     }
 
     .index_why_we_description {
@@ -835,6 +937,9 @@ select {
     h2 {
       margin-left: 60px !important;
       font-size: 26px;
+      font font {
+        font-size: 26px;
+      }
     }
 
     .index_input_container {
@@ -845,12 +950,18 @@ select {
         width: 100%;
         margin-bottom: 25px;
         font-size: 22px;
+        font font {
+          font-size: 22px;
+        }
       }
     }
 
     button {
       width: 100% !important;
       font-size: 24px !important;
+      font font {
+        font-size: 24px !important;
+      }
     }
   }
 
@@ -862,6 +973,9 @@ select {
 
     a {
       font-size: 26px !important;
+      font font {
+        font-size: 26px !important;
+      }
     }
 
     li {
@@ -907,17 +1021,26 @@ select {
   .wrapper {
     max-width: 300px !important;
   }
+  /* .wrapper {
+    max-width: 410px !important;
+  } */
 
   .shift_description {
     margin: 0 !important;
     margin-left: 15px !important;
 
     font-size: 16px !important;
+    font font {
+      font-size: 16px !important;
+    }
   }
 
   .index_main_screen_name_container {
     h1 {
       font-size: 32px;
+      font font {
+        font-size: 32px;
+      }
     }
   }
 
@@ -926,6 +1049,9 @@ select {
 
     h2 {
       font-size: 35px !important;
+      font font {
+        font-size: 35px !important;
+      }
     }
   }
 
@@ -936,6 +1062,9 @@ select {
 
     .index_advantages_item_title {
       font-size: 16px !important;
+      font font {
+        font-size: 16px !important;
+      }
     }
   }
 
@@ -957,10 +1086,16 @@ select {
 
     input {
       font-size: 16px !important;
+      font font {
+        font-size: 16px !important;
+      }
     }
 
     textarea {
       font-size: 16px !important;
+      font font {
+        font-size: 16px !important;
+      }
     }
   }
 }

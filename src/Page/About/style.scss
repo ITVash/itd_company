@@ -15,6 +15,10 @@ body {
 		h2 {
 			font-size: 64px;
 			text-align: center;
+			font font {
+				font-size: 64px;
+				text-align: center;
+			}
 		}
 	}
 
@@ -83,6 +87,12 @@ body {
 					font-size: 30px;
 					line-height: 37px;
 					color: #fff;
+					font font {
+						font-family: "Gilroy-ExtraBold", sans-serif;
+						font-size: 30px;
+						line-height: 37px;
+						color: #fff;
+					}
 				}
 
 				.bottom_part {
@@ -97,6 +107,12 @@ body {
 						font-size: 100px;
 						line-height: 123px;
 						color: rgba(255, 255, 255, 0.04);
+						font font {
+							font-family: "Gilroy-ExtraBold", sans-serif;
+							font-size: 100px;
+							line-height: 123px;
+							color: rgba(255, 255, 255, 0.04);
+						}
 					}
 				}
 			}
@@ -131,6 +147,12 @@ body {
 				font-family: "Gilroy-ExtraBold", sans-serif;
 				color: #121212;
 				text-transform: uppercase;
+				font font {
+					font-size: 32px;
+					line-height: 39px;
+					font-family: "Gilroy-ExtraBold", sans-serif;
+					color: #121212;
+				}
 			}
 
 			p {
@@ -139,6 +161,11 @@ body {
 				color: #121212;
 
 				margin-top: 30px;
+				font font {
+					font-size: 22px;
+					line-height: 26px;
+					color: #121212;
+				}
 			}
 		}
 	}
@@ -169,7 +196,12 @@ body {
 	position: relative;
 
 	padding: 35px 0;
-
+	font font {
+		color: #fff;
+		font-size: 30px;
+		line-height: 35px;
+		text-align: center;
+	}
 	&:before {
 		content: "";
 		width: 80%;
@@ -227,7 +259,11 @@ body {
 		background-size: 150% 100%;
 		background-position: 0% 0;
 		transition: all 0.25s;
-
+		font font {
+			font-size: 36px;
+			color: white;
+			font-family: "Gilroy-ExtraBold", sans-serif;
+		}
 		&:hover {
 			background-position: 100% 0;
 		}
@@ -254,6 +290,11 @@ body {
 			font-size: 22px;
 			line-height: 27px;
 			margin-bottom: 10px;
+			font font {
+				font-family: "Gilroy-ExtraBold", sans-serif;
+				font-size: 22px;
+				line-height: 27px;
+			}
 		}
 
 		.gradient_contact {
@@ -264,6 +305,11 @@ body {
 			background: linear-gradient(90deg, #54bbf6 0%, #390065 100%);
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
+			font font {
+				font-family: "Gilroy-ExtraBold", sans-serif;
+				font-size: 36px;
+				line-height: 44px;
+			}
 		}
 	}
 }
@@ -296,6 +342,9 @@ body {
 		.gradient_title {
 			h2 {
 				font-size: 90px;
+				font font {
+					font-size: 90px;
+				}
 			}
 		}
 	}
@@ -372,6 +421,12 @@ body {
 					background: linear-gradient(180deg, #54bbf6 0%, #390065 100%);
 					background-clip: text;
 					-webkit-text-fill-color: transparent;
+					font font {
+						font-family: "Gilroy-ExtraBold", sans-serif;
+						font-style: normal;
+						font-weight: 800;
+						font-size: 120px;
+					}
 				}
 
 				p {
@@ -380,6 +435,13 @@ body {
 					font-weight: 500;
 					font-size: 32px;
 					line-height: 38px;
+					font font {
+						font-family: "Gilroy-Medium", sans-serif;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 32px;
+						line-height: 38px;
+					}
 				}
 			}
 		}
@@ -391,14 +453,19 @@ body {
 			font-size: 120px;
 			line-height: 90px;
 			margin-bottom: 30px;
-
 			text-transform: uppercase;
 			background: linear-gradient(180deg, #54bbf6 0%, #390065 100%);
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
-
 			display: none;
 			opacity: 0.5;
+			font font {
+				font-family: "Gilroy-ExtraBold", sans-serif;
+				font-style: normal;
+				font-weight: 800;
+				font-size: 120px;
+				line-height: 90px;
+			}
 		}
 	}
 
@@ -460,6 +527,9 @@ body {
 @media (max-width: 1200px) {
 	#how_we_work_form #how_we_work_slider .slide .slide_info p {
 		font-size: 28px;
+		font font {
+			font-size: 28px;
+		}
 	}
 
 	#how_we_work_form #how_we_work_slider .slide .slide_info .number {
@@ -486,10 +556,17 @@ body {
 		font-size: 90px;
 		line-height: 75px;
 		margin-bottom: 5px;
+		font font {
+			font-size: 90px;
+			line-height: 75px;
+		}
 	}
 
 	#how_we_work_form #how_we_work_slider .slide .slide_info p {
 		font-size: 24px;
+		font font {
+			font-size: 24px;
+		}
 	}
 
 	/*.gradient_title {
@@ -498,6 +575,9 @@ body {
 	.gradient_title h2 {
 		margin-bottom: 0;
 		font-size: 65px !important;
+		font font {
+			font-size: 65px !important;
+		}
 	}
 
 	#how_we_work_form .slide_switcher {
@@ -575,6 +655,9 @@ body {
 	.gradient_title h2 {
 		margin-bottom: 10px;
 		font-size: 35px !important;
+		font font {
+			font-size: 35px !important;
+		}
 	}
 
 	#how_we_work_form #how_we_work_slider .number_mobile {
@@ -596,11 +679,18 @@ body {
 	#how_we_work_form #how_we_work_slider .slide .slide_info p {
 		font-size: 18px;
 		line-height: 21px;
+		font font {
+			font-size: 18px;
+			line-height: 21px;
+		}
 	}
 
 	#how_we_work_form #how_we_work_slider .number_mobile {
 		font-size: 110px;
 		margin-top: 10px;
+		font font {
+			font-size: 110px;
+		}
 	}
 
 	#how_we_work_form .how_we_work_wrapper {
@@ -656,6 +746,10 @@ body {
 		line-height: 28px;
 
 		padding: 35px;
+		font font {
+			font-size: 24px;
+			line-height: 28px;
+		}
 	}
 
 	.index_contacts h2 {
@@ -677,6 +771,9 @@ body {
 		margin-left: 0 !important;
 		margin-bottom: 15px;
 		font-size: 32px;
+		font font {
+			font-size: 32px;
+		}
 	}
 
 	.contact_form .contacts {
@@ -691,6 +788,9 @@ body {
 		margin-top: 35px;
 		padding: 20px 40px !important;
 		font-size: 20px;
+		font font {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -702,11 +802,18 @@ body {
 		h2 {
 			font-size: 24px;
 			line-height: 28px;
+			font font {
+				font-size: 24px;
+				line-height: 28px;
+			}
 		}
 
 		p {
 			margin-top: 15px;
 			font-size: 18px;
+			font font {
+				font-size: 18px;
+			}
 		}
 	}
 
@@ -724,6 +831,9 @@ body {
 
 	.contact_form .contacts .gradient_contact {
 		font-size: 24px;
+		font font {
+			font-size: 24px;
+		}
 	}
 
 	.contact_form .contacts > div {
@@ -737,6 +847,9 @@ body {
 	.photos #how_we_work {
 		width: 100% !important;
 		font-size: 24px !important;
+		font font {
+			font-size: 24px !important;
+		}
 	}
 }
 
@@ -749,6 +862,10 @@ body {
 	.about_introduction .about_container .about p {
 		font-size: 16px;
 		line-height: 19px;
+		font font {
+			font-size: 16px;
+			line-height: 19px;
+		}
 	}
 
 	.about_introduction .about_img_container {
@@ -759,6 +876,9 @@ body {
 		font-size: 18px;
 		padding-left: 0;
 		padding-right: 0;
+		font font {
+			font-size: 18px;
+		}
 	}
 
 	.photos .photos_container {

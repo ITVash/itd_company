@@ -36,7 +36,13 @@
 		line-height: 29px;
 		color: #ffffff;
 		cursor: pointer;
-
+		font {
+			font {
+				font-size: 18px;
+				line-height: 29px;
+				color: #ffffff;
+			}
+		}
 		&:hover {
 			font-weight: 700;
 		}
@@ -44,6 +50,11 @@
 
 	.popup_nav_list__item_active {
 		font-weight: 700;
+		font {
+			font {
+				font-weight: 700;
+			}
+		}
 	}
 }
 
@@ -243,6 +254,23 @@
 					transform: rotate(180deg);
 					padding-bottom: 35px;
 				}
+				div {
+					font {
+						font {
+							font-size: 50px;
+							line-height: 59px;
+							color: #fff;
+							//text-transform: uppercase;
+							font-family: "Gilroy-Bold", sans-serif;
+							//white-space: nowrap;
+		
+							//position: absolute;
+							//writing-mode: tb-rl;
+							//transform: rotate(180deg);
+							//padding-bottom: 35px;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -355,6 +383,10 @@
 					transform: none;
 					padding-right: 20px;
 					padding-bottom: 0;
+					font font {
+						font-size: 24px !important;
+						writing-mode: unset;
+					}
 				}
 			}
 		}

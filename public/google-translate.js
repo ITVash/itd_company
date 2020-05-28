@@ -13,6 +13,7 @@ TranslateInit = () => {
     item.addEventListener("click", items => {
       localStorage.setItem("lang", item.getAttribute("data-google-lang"))
       item.classList.add("popup_nav_list__item_active");
+      TranslateSetCookie(item.getAttribute("data-google-lang"))
       window.location.reload()
     });
   })
@@ -22,6 +23,18 @@ TranslateInit = () => {
   });
   console.log('google', tt)
 };
+
+TranslateSetCookie = (code) => {
+  // Записываем куки /язык_который_переводим/язык_на_который_переводим
+  document.cookie = `googtrans=/auto/${code};`
+  document.cookie = `googtrans=/auto/${code}; domain: . ${document.domain};`
+  /* $.cookie('googtrans', "/auto/" + code);
+  $.cookie("googtrans", "/auto/" + code, {
+      domain: "." + document.domain,
+  }); */
+}
+
+
 
 
 //TranslateInit();

@@ -74,9 +74,9 @@ const Header = () => {
 			</section>
 			<section className='fixed_buttons_right'>
 				<div className="lang_button_container">
-					<button className='lang_button' onClick={()=> setLang(!lang)} onBlur={()=> setLang(false)}></button>
+					<button className='lang_button' onClick={()=> setLang(!lang)} /* onBlur={()=> setLang(false)} */ ></button>
 					{/* {lang && ( */}
-						<ul className={classNames("popup_nav_list", { popup_nav_list__active: lang })} onBlur={()=> setLang(false)}>
+						<ul className={classNames("popup_nav_list", { popup_nav_list__active: lang })} onBlur={()=> setLang(false)} onFocus={()=> setLang(false)}>
 							<li className="popup_nav_list__item" data-google-lang="en">Английский</li>
 							<li className="popup_nav_list__item" data-google-lang="ru">Русский</li>
 						</ul>

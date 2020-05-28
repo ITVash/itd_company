@@ -31,7 +31,13 @@ footer {
 			font-size: 26px;
 			font-family: "Gilroy-ExtraBold", sans-serif;
 			transition: all 0.25s;
-
+			font {
+				font {
+					color: #fff;
+					font-size: 26px;
+					font-family: "Gilroy-ExtraBold", sans-serif;
+				}
+			}
 			&:hover {
 				background-size: 50%;
 				background: linear-gradient(90deg, #54bbf6 0%, #390065 100%);

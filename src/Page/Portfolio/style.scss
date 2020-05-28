@@ -48,6 +48,12 @@
 				color: rgba(255, 255, 255, 0.7);
 				font-family: "Gilroy-ExtraBold", sans-serif;
 				margin-left: 60px;
+				font font {
+					font-size: 200px;
+					line-height: 154px;
+					color: rgba(255, 255, 255, 0.7);
+					font-family: "Gilroy-ExtraBold", sans-serif;
+				}
 			}
 
 			.portfolio_description_container {
@@ -59,6 +65,11 @@
 				font-family: "Gilroy-ExtraBold", sans-serif;
 				font-size: 30px;
 				color: #121212;
+				font font {
+					font-family: "Gilroy-ExtraBold", sans-serif;
+					font-size: 30px;
+					color: #121212;
+				}
 			}
 
 			.description {
@@ -68,6 +79,12 @@
 				font-size: 16px;
 
 				margin-top: 15px;
+				font font {
+					font-family: "Gilroy-Regular", sans-serif;
+					color: #121212;
+					line-height: 19px;
+					font-size: 16px;
+				}
 			}
 		}
 
@@ -125,6 +142,12 @@
 
 					writing-mode: tb-rl;
 					transform: rotate(180deg);
+					font font {
+						font-family: "Gilroy-ExtraBold", sans-serif;
+						font-style: normal;
+						font-weight: 800;
+						font-size: 36px;
+					}
 
 					&:hover {
 							background-position: 100% 0;
@@ -180,6 +203,9 @@
 
 			.case_number {
 				font-size: 140px;
+				font font {
+					font-size: 140px;
+				}
 			}
 
 			.portfolio_description_container {
@@ -199,11 +225,18 @@
 
 			.portfolio_case_title {
 				font-size: 24px;
+				font font {
+					font-size: 24px;
+				}
 			}
 
 			.case_number {
 				font-size: 100px;
 				line-height: 134px;
+				font font {
+					font-size: 100px;
+					line-height: 134px;
+				}
 			}
 
 			.portfolio_description_container {
@@ -216,5 +249,8 @@
 	.portfolio_cases_screen .portfolio_cases_container article .case_number {
 		margin-left: 15px;
 		line-height: 105px;
+		font font {
+			line-height: 105px;
+		}
 	}
 }

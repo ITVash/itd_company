@@ -22,16 +22,45 @@
 		font-family: "Avantgard", sans-serif;
 		text-transform: uppercase;
 	}
+	h1 {
+		font {
+			font {
+				font-size: 70px;
+				font-weight: 700;
+				font-family: "Avantgard", sans-serif;
+				text-transform: uppercase;
+			}
+		}
+	}
 	h2 {
 		margin-top: 10px;
 		font-size: 30px;
 		font-weight: 800;
 		font-family: "Gilroy ExtraBold", sans-serif;
 	}
+	h2 {
+		font {
+			font {
+				//margin-top: 10px;
+				font-size: 30px;
+				font-weight: 800;
+				font-family: "Gilroy ExtraBold", sans-serif;
+			}
+		}
+	}
 	.index_main_screen_text {
 		font-size: 24px;
 		font-family: "Gilroy-Light", sans-serif;
 		margin-top: 90px;
+	}
+	.index_main_screen_text {
+		font {
+			font {
+				font-size: 24px;
+				font-family: "Gilroy-Light", sans-serif;
+				//margin-top: 90px;
+			}
+		}
 	}
 	.main_screen_button {
 		font-size: 36px;
@@ -41,6 +70,19 @@
 		padding: 25px 70px;
 		margin-top: 45px;
 		cursor: pointer;
+	}
+	.main_screen_button {
+		font {
+			font {
+				font-size: 36px;
+				font-family: "Gilroy ExtraBold", sans-serif;
+				background-color: #390065;
+				color: #fff;
+				//padding: 25px 70px;
+				//margin-top: 45px;
+				cursor: pointer;
+			}
+		}
 	}
 }
 .index_advantages_screen {
@@ -79,6 +121,20 @@
 				font-family: "Gilroy-ExtraBold", sans-serif;
 				color: rgba(255, 255, 255, 0.5);
 			}
+			.index_advantages_item_number {
+				font {
+					font {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						flex-basis: 50%;
+						font-size: 155px;
+						font-family: "Gilroy-ExtraBold", sans-serif;
+						color: rgba(255, 255, 255, 0.5);
+					}
+				}
+			}
 			.index_advantages_item_icon {
 				justify-content: center;
 				display: flex;
@@ -97,6 +153,15 @@
 				font-size: 26px;
 				font-family: "Gilroy-Light", sans-serif;
 				text-align: center;
+			}
+			.index_advantages_item_title {
+				font {
+					font {
+						font-size: 26px;
+						font-family: "Gilroy-Light", sans-serif;
+						text-align: center;
+					}
+				}
 			}
 		}
 		.index_advantages_item:nth-child(2n) {
@@ -128,6 +193,21 @@
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+	h2 {
+		font {
+			font {
+				font-size: 96px;
+				//margin-left: 230px;
+				//margin-bottom: 50px;
+				background: linear-gradient(270deg, #54bbf6 0%, #390065 100%);
+				display: inline-block;
+				font-family: "Gilroy-ExtraBold", sans-serif;
+				text-transform: uppercase;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
 	.index_why_we_description {
 		margin-left: 290px;
 		padding-left: 60px;
@@ -150,6 +230,17 @@
 		margin-left: 230px;
 		margin-bottom: 70px;
 		font-family: "Gilroy-ExtraBold", sans-serif;
+	}
+	h2 {
+		font {
+			font {
+				color: #fff;
+				font-size: 60px;
+				//margin-left: 230px;
+				//margin-bottom: 70px;
+				font-family: "Gilroy-ExtraBold", sans-serif;
+			}
+		}
 	}
 	.index_input_container {
 		display: flex;
@@ -203,12 +294,32 @@
 			background-position: 100% 0;
 		}
 	}
+	button {
+		font {
+			font {
+				font-size: 36px;
+				color: white;
+				font-family: "Gilroy-ExtraBold", sans-serif;
+			}
+		}
+	}
 	.error_form_msg {
 		margin-top: 15px;
 		font-size: 22px;
 		text-align: left;
 		font-family: "Gilroy-ExtraBold", sans-serif;
 		color: #9f0000;
+	}
+	.error_form_msg {
+		form {
+			form {
+				//margin-top: 15px;
+				font-size: 22px;
+				//text-align: left;
+				font-family: "Gilroy-ExtraBold", sans-serif;
+				color: #9f0000;
+			}
+		}
 	}
 	.error_input {
 		border: 3px solid #9f0000;
@@ -227,6 +338,18 @@
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+	h2 {
+		font {
+			font {
+				font-size: 96px;
+				font-family: "Gilroy ExtraBold", sans-serif;
+				text-transform: uppercase;
+				background: linear-gradient(90deg, #54bbf6 0%, #390065 100%);
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
 }
 
 //Forms
@@ -234,11 +357,17 @@
 	background-color: #fff;
 	h2 {
 		color: #121212;
+		font font {
+			color: #121212;
+		}
 	}
 
 	input,
 	textarea {
 		color: #121212;
+		font font {
+			color: #121212;
+		}
 	}
 }
 
@@ -252,7 +381,15 @@
 	//border-image: $side_menu_gradient_invert;
 	//border-image-slice: 1;
 	//border-width: 5px;
-
+	font {
+		font {
+			position: relative;
+			//margin-left: 80px;
+			//margin-right: 80px;
+			//max-width: 910px;
+			font-size: 22px;
+		}
+	}
 	position: relative;
 
 	&::before {
@@ -411,14 +548,31 @@
 @media (max-width: 800px) {
 	.index_main_screen_name_container h1 {
 		font-size: 45px;
+		font {
+			font {
+				font-size: 45px !important;
+			}
+		}
 	}
-
+	/* .index_main_screen_name_container h1 font font {
+		font-size: 45px !important; 
+	} */
 	.index_main_screen_name_container .main_screen_button {
 		font-size: 25px;
+		font {
+			font {
+				font-size: 25px;
+			}
+		}
 	}
 
 	.gradient_title h2 {
 		font-size: 60px !important;
+		font {
+			font {
+				font-size: 50px !important;
+			}
+		}
 	}
 
 	.index_why_we {
@@ -427,10 +581,16 @@
 		h2 {
 			font-size: 70px !important;
 			margin-bottom: 20px;
+			font font {
+				font-size: 70px !important;
+			}
 		}
 
 		.index_why_we_description {
 			font-size: 18px;
+			font font {
+				font-size: 18px;
+			}
 		}
 	}
 
@@ -454,11 +614,17 @@
 	.index_main_screen_name_container .index_main_screen_text {
 		margin-top: 25px !important;
 		font-size: 18px !important ;
+		font font {
+			font-size: 18px !important ;
+		}
 	}
 
 	.index_main_screen_name_container .main_screen_button {
 		font-size: 20px;
 		padding: 20px 40px !important;
+		font font {
+			font-size: 20px;
+		}
 	}
 
 	.index_advantages_screen {
@@ -480,6 +646,9 @@
 			margin-left: 80px !important;
 			font-size: 45px;
 			margin-bottom: 30px;
+			font font {
+				font-size: 45px;
+			}
 		}
 
 		input {
@@ -510,6 +679,9 @@
 		margin-top: 25px !important;
 
 		font-size: 20px !important;
+		font font {
+			font-size: 20px !important;
+		}
 	}
 
 	form {
@@ -521,6 +693,9 @@
 
 		h2 {
 			font-size: 60px !important;
+			font font {
+				font-size: 45px !important;
+			}
 		}
 	}
 }
@@ -540,6 +715,9 @@
 
 		h2 {
 			font-size: 35px !important;
+			font font {
+				font-size: 35px !important;
+			}
 		}
 	}
 
@@ -549,6 +727,9 @@
 
 			.index_advantages_item_number {
 				font-size: 100px !important;
+				font font {
+					font-size: 100px !important;
+				}
 			}
 
 			.index_advantages_item_icon {
@@ -557,6 +738,9 @@
 
 			.index_advantages_item_title {
 				font-size: 20px !important;
+				font font {
+					font-size: 20px !important;
+				}
 			}
 
 			img {
@@ -576,6 +760,9 @@
 		h2 {
 			margin-left: 60px !important;
 			font-size: 40px !important;
+			font font {
+				font-size: 40px !important;
+			}
 		}
 
 		.index_why_we_description {
@@ -589,6 +776,9 @@
 		h2 {
 			margin-left: 60px !important;
 			font-size: 26px;
+			font font {
+				font-size: 26px;
+			}
 		}
 
 		.index_input_container {
@@ -599,12 +789,18 @@
 				width: 100%;
 				margin-bottom: 25px;
 				font-size: 22px;
+				font font {
+					font-size: 22px;
+				}
 			}
 		}
 
 		button {
 			width: 100% !important;
 			font-size: 24px !important;
+			font font {
+				font-size: 24px !important;
+			}
 		}
 	}
 	
@@ -623,6 +819,9 @@
 
 			h2 {
 				font-size: 23px;
+				font font {
+					font-size: 23px;
+				}
 			}
 		}
 	}
@@ -634,11 +833,17 @@
 		margin-left: 15px !important;
 
 		font-size: 16px !important;
+		font font {
+			font-size: 16px !important;
+		}
 	}
 
 	.index_main_screen_name_container {
 		h1 {
 			font-size: 32px;
+			font font {
+				font-size: 32px;
+			}
 		}
 	}
 
@@ -647,6 +852,9 @@
 
 		h2 {
 			font-size: 35px !important;
+			font font {
+				font-size: 35px !important;
+			}
 		}
 	}
 
@@ -657,6 +865,9 @@
 
 		.index_advantages_item_title {
 			font-size: 16px !important;
+			font font {
+				font-size: 16px !important;
+			}
 		}
 	}
 
@@ -678,10 +889,16 @@
 
 		input {
 			font-size: 16px !important;
+			font font {
+				font-size: 16px !important;
+			}
 		}
 
 		textarea {
 			font-size: 16px !important;
+			font font {
+				font-size: 16px !important;
+			}
 		}
 	}
 }
