@@ -282,6 +282,10 @@ select {
 }
 .skiptranslate {
   display: none !important;
+  visibility: hidden !important;
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
 }
 .page {
   display: flex;
@@ -291,6 +295,20 @@ select {
     top: 0 !important;
     position: static !important;
   }
+}
+#goog-gt-tt {
+  display: none !important;
+  visibility: hidden !important;
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
+}
+.goog-tooltip {
+  display: none !important;
+  visibility: hidden !important;
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
 }
 
 /* @media (max-width: 1536px) {

@@ -151,11 +151,11 @@ const About = () => {
 						<div className='contacts'>
 							<div>
 								<div className='title'>Позвоните нам</div>
-								<div className='gradient_contact'>+ 38 (071) 555-33-22</div>
+								<div className='gradient_contact'>+ 79950060572</div>
 							</div>
 							<div>
 								<div className='title'>Или напишите нам</div>
-								<div className='gradient_contact'>itd.company@gmail.com</div>
+								<div className='gradient_contact'>itdwebcompany@gmail.com</div>
 							</div>
 						</div>
 
