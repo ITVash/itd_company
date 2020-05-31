@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { Helmet } from "react-helmet"
+import ReadMore from 'read-more-react'
 
 import { Header, Footer } from "../../Component"
 import { Clickbait, Forms } from '../../Container'
@@ -82,6 +83,9 @@ const Home = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0)
 	}, [])
+	const divText = document.createElement("div")
+	const text = `<p>Мы придерживаемся принципу индивидуального подхода к каждому	проекту, любой наш проект уникален.</p><p>Мы создаем сайты для бизнеса, которые будут работать на вас.</p><p>Мы всегда стремимся найти самые конкурентоспособные решения и	достичь самого высокого уровня эффективности по всем проектам.</p><p>Мы создаем landing, корпоративный сайт, интернет – магазин любой сложности.</p><p>Мы продвигаем сайты на всех интернет- площадках.</p><p>Заказать создание сайта от веб - студии International Techno Dynamics, значит доверить свой имидж лучшим.</p>`
+	divText.innerHTML = text
 	return (
 		<>
 			<Helmet>
@@ -203,7 +207,7 @@ const Home = () => {
 				<div className='wrapper'>
 					<h2>Почему мы?</h2>
 					<div className='shift_description'>
-						<p>
+						{window.innerWidth >= 100 && (<><p>
 							Мы придерживаемся принципу индивидуального подхода к каждому
 							проекту, любой наш проект уникален.
 						</p>
@@ -218,9 +222,18 @@ const Home = () => {
 						</p>
 						<p>Мы продвигаем сайты на всех интернет- площадках.</p>
 						<p>
-							Заказать создание сайта от веб - студии International Techno
-							Dynamics, значит доверить свой имидж лучшим.
-						</p>
+								Заказать создание сайта от веб - студии International Techno
+								Dynamics, значит доверить свой имидж лучшим.
+						</p></>)}
+						{window.innerWidth <= 100 && (
+							<ReadMore
+								text={divText.innerHTML}
+								min={200}
+								ideal={200}
+								max={text.length}
+								readMoreText="читать больше..."
+							/>
+						)}
 					</div>
 				</div>
 			</section>
