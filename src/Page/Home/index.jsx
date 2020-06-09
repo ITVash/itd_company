@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet"
 import ReadMore from 'read-more-react'
 
 import { Header, Footer } from "../../Component"
-import { Clickbait, Forms } from '../../Container'
+import { Forms } from '../../Container'
+import { Clickbait } from '../../Component'
 
 import "./style.scss"
 

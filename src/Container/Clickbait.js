@@ -1,5 +1,6 @@
 import React from 'react'
 import { withFormik } from 'formik'
+import axios from 'axios'
 
 import { Clickbait as ClickbaitBase } from '../Component'
 
@@ -15,36 +16,37 @@ const Clickbait = withFormik({
   enableReinitialize: true,
   mapPropsToValues: () => ({
     map: maping,
-    name: '',
-    phone: '',
-    email: '',
-    text: ''
+    name: maping.get("forms").get("name"),
+    phone: maping.get("forms").get("phone"),
+    email: maping.get("forms").get("email"),
+    text: maping.get("forms").get("text")
   }),
   validate: values => {
-    const value = values.map.get("forms")
+    //const value = values.map.get("forms")
     let errors = {}
     //validateForm({ values, errors })
-    if (!value.get("name")) {
+    if (!values.name) {
       errors.name = "Имя обязательно для заполнения!"
     }
-    if (!value.get("phone")) {
+    if (!values.phone) {
       errors.phone = "Телефон обязателен для заполнения!"
     }
-    if (!value.get("email")) {
+    if (!values.email) {
       errors.email = "Email обязателен для заполнения!"
     }
-    if (!value.get("text")) {
+    if (!values.text) {
       errors.text = "Сообщение не может быть пустым!"
     }
     console.log('errors', errors)
     return errors
   },
-  handleChange: e => {
+  /* handleChange: e => {
     console.log(e.target.name)
     maping.get("forms").set(e.target.name, e.target.value)
-  },
+  }, */
   handleSubmit: (values, { setSubmitting }) => {
     console.log('values', values)
+    axios.post("http://localhost:8080/api/sendclick", values)
     setSubmitting(false)
   },
 

@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet"
 import classNames from "classnames"
 import Toggle from "react-slide-toggle"
 
-import { Header, Footer } from "../../Component"
-import { Clickbait } from '../../Container'
+import { Header, Footer, Clickbait } from "../../Component"
+//import { Clickbait } from '../../Container'
 
 import "./style.scss"
 

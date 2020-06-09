@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react"
 import classNames from 'classnames'
-import { bodyParser } from 'body-parser';
+//import { bodyParser } from 'body-parser';
+import axios from 'axios'
 
 const Clickbait = props => {
 	const { setCheck, check, values, touched, errors, handleSubmit, isSubmitting, handleBlur, handleChangeMe, handleChange } = props
-  /* const maping = new Map([
+  const maping = new Map([
 		["list1", new Map([])],
 		["list2", new Map([])],
 		["list3", new Map([])],
 		["list4", new Map([])],
 		["forms", new Map([])],
-	]) */
-	const maping = values.map
+	])
+	
+	/* const maping = values.map*/
 	window.maps = maping
 	const slider = () => {
 		
@@ -67,6 +69,30 @@ const Clickbait = props => {
 				document.querySelector("#number_of_slide").textContent =
 					"0" + (index + 1) + "/" + length + ""
 			})
+	}
+	const clickBait = () => {
+		const obj = {
+			list1: [],
+			list2: [],
+			list3: [],
+			list4: [],
+			forms: [],
+		}
+		maping.get('list1').forEach(item => {
+			obj.list1.push(item)
+		})
+		maping.get('list2').forEach(item => {
+			obj.list2.push(item)
+		})
+		maping.get('list3').forEach(item => {
+			obj.list3.push(item)
+		})
+		obj.list4.push(maping.get('list4'))
+		maping.get('forms').forEach(item => {
+			obj.forms.push(item)
+		})
+		axios.post("http://localhost:5051/api/sendclick", obj)
+		setCheck(false)
 	}
 	useEffect(() => {
 		slider()
@@ -426,16 +452,16 @@ const Clickbait = props => {
 						</div>
 
 						<div className='clickbait_slide'>
-							<form onSubmit={handleSubmit}>
+							<form>
 								<div className='index_input_container'>
 									<input
 										type='text'
 										className={classNames("index_contacts_input", {
-											error_input: errors.names,
+											//error_input: errors.names,
 										})}
 										placeholder='Имя'
 										name='name'
-										onBlur={handleBlur}
+										//onBlur={handleBlur}
 										required
 										value={maping.get("forms").get("name")}
 										onChange={(e) => {
@@ -448,11 +474,11 @@ const Clickbait = props => {
 									<input
 										type='tel'
 										className={classNames("index_contacts_input", {
-											error_input: errors.phone
+											//error_input: errors.phone
 										})}
 										placeholder='Телефон (WhatsApp/Viber)'
 										name='phone'
-										onBlur={handleBlur}
+										//onBlur={handleBlur}
 										required
 										value={maping.get("forms").get("phone")}
 										onChange={(e) => {
@@ -464,11 +490,11 @@ const Clickbait = props => {
 									<input
 										type='email'
 										className={classNames("index_contacts_input", {
-											error_input: errors.email
+											//error_input: errors.email
 										})}
 										placeholder='Email'
 										name='email'
-										onBlur={handleBlur}
+										//onBlur={handleBlur}
 										required
 										value={maping.get("forms").get("email")}
 										onChange={(e) => {
@@ -480,14 +506,14 @@ const Clickbait = props => {
 								</div>
 								<textarea
 									className={classNames("textarea", {
-										error_input: errors.text
+										//error_input: errors.text
 									})}
 									name='text'
 									id=''
 									cols='30'
 									rows='10'
 									placeholder='Ваше сообщение'
-									onBlur={handleBlur}
+									//onBlur={handleBlur}
 									required
 									value={maping.get("forms").get("text")}
 									onChange={(e) => {
@@ -497,12 +523,15 @@ const Clickbait = props => {
 									/* onChange={(e) => handleChange(e)} */
 								></textarea>
 								<div className='error_form_msg'>
-									{errors.name && `${errors.name}\r\n`}
+									{/* {errors.name && `${errors.name}\r\n`}
 									{errors.phone && `${errors.phone} \r\n`}
 									{errors.email && `${errors.email} \r\n`}
-									{errors.text && errors.text}
+									{errors.text && errors.text} */}
 								</div>
-								<button type='submit' disabled={isSubmitting}>
+								<button type='button' /* disabled={isSubmitting} */ onClick={() => {
+									clickBait()
+									//axios.post("http://localhost:8080/api/sendclick", maping)
+								}}>
 									Отправить
 								</button>
 							</form>
