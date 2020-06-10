@@ -32,7 +32,7 @@ export default withFormik({
   handleSubmit: (values, { setSubmitting, resetForm }) => {
     console.log('values', values)
     //Sender(values).catch(err => console.log('err', err))
-    axios.post("http://localhost:5051/api/sendform", values)
+    axios.post("/api/sendform", values)
     resetForm()
     setSubmitting(false)
   },

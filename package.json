@@ -21,6 +21,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://93.171.233.145:5051",
   "browserslist": {
     "production": [
       ">0.2%",
