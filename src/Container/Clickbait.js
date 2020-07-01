@@ -46,7 +46,7 @@ const Clickbait = withFormik({
   }, */
   handleSubmit: (values, { setSubmitting }) => {
     console.log('values', values)
-    axios.post("http://localhost:8080/api/sendclick", values)
+    axios.post("https://api.itd.company:5051/api/sendclick", values)
     setSubmitting(false)
   },
 

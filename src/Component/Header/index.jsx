@@ -17,6 +17,9 @@ const Header = () => {
 	new google.translate.TranslateElement({
 		pageLanguage: googleTranslateConfig.lang,
 }) */
+	React.useEffect(()=>{
+		document.body.addEventListener('click', ()=> setCall(false))
+	},[call])
 	return (
 		<>
 			<section id='main_menu'  className={classNames({open: open})}>
@@ -83,7 +86,7 @@ const Header = () => {
 					{/* )} */}
 				</div>
 				<div className="call_button_container">
-					<button className='call_button' onClick={()=> setCall(!call)} onBlur={()=> setCall(false)}></button>
+					<button className='call_button' onClick={()=> setCall(!call)} onBlur={()=> {}}></button>
 					{call && (
 						<ul className="popup_nav_list popup_nav_list__bottom popup_nav_list__active">
 							{/* <li className="popup_nav_list__item">+380715553322</li> */}
