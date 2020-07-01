@@ -17,9 +17,11 @@ const Header = () => {
 	new google.translate.TranslateElement({
 		pageLanguage: googleTranslateConfig.lang,
 }) */
+	const callRef = React.useRef()
 	React.useEffect(()=>{
 		document.body.addEventListener('click', ()=> setCall(false))
 	},[call])
+	console.log('callRef :>> ', callRef.current);
 	return (
 		<>
 			<section id='main_menu'  className={classNames({open: open})}>
@@ -88,7 +90,7 @@ const Header = () => {
 				<div className="call_button_container">
 					<button className='call_button' onClick={()=> setCall(!call)} onBlur={()=> {}}></button>
 					{call && (
-						<ul className="popup_nav_list popup_nav_list__bottom popup_nav_list__active">
+						<ul className="popup_nav_list popup_nav_list__bottom popup_nav_list__active" ref={ref => callRef.current = ref}>
 							{/* <li className="popup_nav_list__item">+380715553322</li> */}
 							<li className="popup_nav_list__item">+79950060572</li>
 						</ul>
