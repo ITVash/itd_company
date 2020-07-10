@@ -91,7 +91,7 @@ const Clickbait = props => {
 		maping.get('forms').forEach(item => {
 			obj.forms.push(item)
 		})
-		axios.post("https://93.171.233.145:5051/api/sendclick", obj)
+		axios.post("https://api.itd.company:5051/api/sendclick", obj)
 		setCheck(false)
 	}
 	useEffect(() => {

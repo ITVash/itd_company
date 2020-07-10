@@ -24,7 +24,7 @@ const Portfolio = props => {
       title: "Rec Hustle",
       desc: "Продакшн студи полного цикла/Узбекистан",
       prev: "../../portfolio/prev/rec_hustle.jpg",
-      link: "https://redhustle.uz/",
+      link: "https://rechustle.uz/",
       file: "../../portfolio/rechustle-min.jpg"
     },
     /* {
@@ -47,7 +47,7 @@ const Portfolio = props => {
       title: "Мария Семенова",
       desc: "Сайт-визитка услуги визажа/Дубай",
       prev: "../../portfolio/prev/mary.jpg",
-      link: "https://mariyasemenova.eu/",
+      link: "https://mariyasemenova.ru/",
       file: "../../portfolio/mary-min.jpg"
     },
     {
@@ -55,7 +55,7 @@ const Portfolio = props => {
       title: "Металл Донбасса",
       desc: "Корпоративный сайт",
       prev: "../../portfolio/prev/metaldon.jpg",
-      link: "https://itd.company",
+      link: "https://металлдонбасса.com",
       file: "../../portfolio/metaldon-min.jpg"
     },
     {

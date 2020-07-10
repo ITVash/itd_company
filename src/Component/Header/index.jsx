@@ -11,17 +11,24 @@ const Header = () => {
 	const [lang, setLang] = useState(false)
 	const [call, setCall] = useState(false)
 	const [mail, setMail] = useState(false)
-	/* const googleTranslateConfig = {
-		lang: 'en'
-	}
-	new google.translate.TranslateElement({
-		pageLanguage: googleTranslateConfig.lang,
-}) */
+	
 	const callRef = React.useRef()
+	const langRef = React.useRef()
+	const mailRef = React.useRef()
 	React.useEffect(()=>{
-		document.body.addEventListener('click', ()=> setCall(false))
-	},[call])
-	console.log('callRef :>> ', callRef.current);
+		document.body.addEventListener('click', e => {
+			if (!e.path.includes(callRef.current)) {
+				setCall(false)
+			}
+			if (!e.path.includes(langRef.current)) {
+				setLang(false)
+			}
+			if (!e.path.includes(mailRef.current)) {
+				setMail(false)
+			}
+		})
+	}, [call, lang, mail])
+
 	return (
 		<>
 			<section id='main_menu'  className={classNames({open: open})}>
@@ -81,7 +88,7 @@ const Header = () => {
 				<div className="lang_button_container">
 					<button className='lang_button' onClick={()=> setLang(!lang)} /* onBlur={()=> setLang(false)} */ ></button>
 					{/* {lang && ( */}
-						<ul className={classNames("popup_nav_list", { popup_nav_list__active: lang })} onBlur={()=> setLang(false)} onFocus={()=> setLang(false)}>
+						<ul className={classNames("popup_nav_list", { popup_nav_list__active: lang })} ref={langRef}>
 							<li className="popup_nav_list__item" data-google-lang="en">Английский</li>
 							<li className="popup_nav_list__item" data-google-lang="ru">Русский</li>
 						</ul>
@@ -90,17 +97,17 @@ const Header = () => {
 				<div className="call_button_container">
 					<button className='call_button' onClick={()=> setCall(!call)} onBlur={()=> {}}></button>
 					{call && (
-						<ul className="popup_nav_list popup_nav_list__bottom popup_nav_list__active" ref={ref => callRef.current = ref}>
+						<ul className="popup_nav_list popup_nav_list__bottom popup_nav_list__active" ref={callRef}>
 							{/* <li className="popup_nav_list__item">+380715553322</li> */}
-							<li className="popup_nav_list__item">+79950060572</li>
+							<li className="popup_nav_list__item"><a className="popup_nav_list__item" href="tel:+79950060572">+79950060572</a></li>
 						</ul>
 					)}
 				</div>
 				<div className="mail_button_container">
-					<button className='mail_button' onClick={()=> setMail(!mail)} onBlur={()=> setMail(false)}></button>
+					<button className='mail_button' onClick={()=> setMail(!mail)} onBlur={()=> {}}></button>
 					{mail && (
-						<ul className="popup_nav_list popup_nav_list__bottom popup_nav_list__active">
-							<li className="popup_nav_list__item">itdwebcompany@gmail.com</li>
+						<ul className="popup_nav_list popup_nav_list__bottom popup_nav_list__active" ref={mailRef}>
+							<li className="popup_nav_list__item"><a className="popup_nav_list__item" href="mailto:itdwebcompany@gmail.com">itdwebcompany@gmail.com</a></li>
 							{/* <li class="popup_nav_list__item">mail@mail.mail</li> */}
 						</ul>
 					)}
