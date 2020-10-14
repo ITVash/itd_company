@@ -117,7 +117,7 @@ const About = () => {
 						</div>
 					</div>
 					<div className='about_img_container'>
-						<img src='/img/about_1.jpg' alt='' />
+						<img src='/img/ITD_1.jpg' alt='' />
 					</div>
 				</section>
 			</div>
@@ -133,8 +133,8 @@ const About = () => {
 			<section className='photos'>
 				<div className='wrapper'>
 					<div className='photos_container'>
-						<img src='/img/photo1.jpg' alt='our photo 1' />
-						<img src='/img/photo2.jpg' alt='our photo 1' />
+						<img src='/img/ITD2.jpg' alt='our photo 1' />
+						<img src='/img/ITD3.jpg' alt='our photo 1' />
 					</div>
 					<button id='how_we_work' onClick={() => setOpenSlide(true)}>
 						Как мы работаем
@@ -151,7 +151,7 @@ const About = () => {
 						<div className='contacts'>
 							<div>
 								<div className='title'>Позвоните нам</div>
-								<div className='gradient_contact'>+ 79950060572</div>
+								<div className='gradient_contact'>+79064187882</div>
 							</div>
 							<div>
 								<div className='title'>Или напишите нам</div>

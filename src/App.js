@@ -5,7 +5,7 @@ import { Home, About, TypeSite, Services, SubService, Portfolio } from './Page'
 
 const App = () => {
 	return (
-		<div className='App'>
+		<div className='App'>      
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
